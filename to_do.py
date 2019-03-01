@@ -13,5 +13,8 @@ while todo.quit_program != "oui":
 
     if todo.quit_program == "oui":
     ###### CODE #####
+       import pandas as pd
+
+       todo.to_csv('to_do.csv', sep = '\t')
 
         break
