@@ -44,6 +44,7 @@ while todo.quit_program != "oui":
        import pandas as pd
 
        if str(input("Voulez-vous ecrire votre TO-DO dans un fichier csv ? Y/N ")) == "Y" :
+           todo = pd.DataFrame(todo)
            todo.to_csv('to_do.csv', sep = '\t')
 
        break
