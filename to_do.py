@@ -13,7 +13,10 @@ class To_do:
 
         else:
             v = input("Veuillez renseigner un nouveau contenu pour cette item: ")
-            self.todo[l-1] = v
+            try:
+                self.todo[l-1] = v
+            raise:
+                print("ce n'est pas un numéro d'item valide")
             self.write()
 
 
