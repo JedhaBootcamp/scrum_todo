@@ -3,12 +3,12 @@ class To_do:
     	self.todo = todo
     	self.quit_program = ""
 
-	def show_to_do(index):
-		if len(index)==0:
+	def show_to_do(self, self.todo):
+		if len(self.todo)==0:
 			print("Aucune to do à faire")
 
 		else: 
-			for element in index: 
+			for element in self.todo: 
 				print(element) 
 
 
