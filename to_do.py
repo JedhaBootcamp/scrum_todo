@@ -28,9 +28,13 @@ todo = To_do()
 
 while todo.quit_program != "oui":
 
-    ####### CODE #####
+    todo.quit_program = input("Voulez vous quitter le progamme (oui ou non)? ")
 
     if todo.quit_program == "oui":
-    ###### CODE #####
+
+        import pandas as pd
+        todo = pd.DataFrame(todo)
+        todo.to_csv("todo.csv")
+
 
         break
