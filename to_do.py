@@ -8,7 +8,8 @@ class To_do:
 			print("Aucune to do à faire")
 
 		else: 
-			print(index)
+			for element in index: 
+				print(element) 
 
 
 todo = To_do()
